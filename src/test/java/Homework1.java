@@ -8,7 +8,7 @@ import pages.RecipePage;
 public class Homework1 {
 
     private final String HOME_PAGE = "http://rus.delfi.lv";
-    private final String recipeName = "Сочный свиной шашлык в быстром маринаде с лимонной кислотой";
+    private final String RECIPE_NAME = "Сочный свиной шашлык в быстром маринаде с лимонной кислотой";
 
     @Test
     public void Test(){
@@ -21,9 +21,9 @@ public class Homework1 {
         homePage.clickFoodMenu();
 
         FoodPage foodPage = new FoodPage(driver);
-        foodPage.openRecipe(recipeName);
+        foodPage.openRecipe(RECIPE_NAME);
 
         RecipePage recipePage = new RecipePage(driver);
-        recipePage.checkIngredients(recipeName);
+        recipePage.checkIngredients(RECIPE_NAME);
     }
 }
